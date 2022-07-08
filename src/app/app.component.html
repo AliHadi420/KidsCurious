@@ -1,3 +1,118 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content">
+      <ion-content>
+        <ion-grid class="main-grid">
+          <ion-row class="row-one bottom">
+            <ion-label>account</ion-label>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="user-info bottom">
+            <img src="../assets/imgs/no-profile-picture.svg">
+            <ion-label>
+              UserName
+            </ion-label>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="planner bottom">
+            <ion-row class="left">
+              <ion-row class="icons">
+                <ion-icon name="navigate-outline"></ion-icon>
+              </ion-row>
+              <ion-label class="space" >
+                MY PLANNER
+              </ion-label>
+              <ion-row class="notification space">
+                <ion-label>1</ion-label>
+              </ion-row>
+            </ion-row>
+            <ion-row>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-row>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="planner bottom">
+            <ion-row class="left" id="two">
+              <ion-row class="icons">
+                <ion-icon name="heart-outline"></ion-icon>
+              </ion-row>
+              <ion-label class="space">
+                Favourites
+              </ion-label>
+              <ion-row class="notification space">
+                <ion-label>1</ion-label>
+              </ion-row>
+            </ion-row>
+            <ion-row>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-row>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="planner bottom" (click)="">
+            <ion-row class="left" id="three">
+              <ion-row class="icons">
+                <ion-icon name="cube-outline"></ion-icon>
+              </ion-row>
+              <ion-label class="space" >
+                History
+              </ion-label>
+              <!-- <ion-row class="notification">
+                <ion-label>1</ion-label>
+              </ion-row> -->
+            </ion-row>
+            <ion-row>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-row>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="planner bottom">
+            <ion-row class="left" id="four">
+              <ion-row class="icons">
+                <ion-icon name="person-outline"></ion-icon>
+              </ion-row>
+              <ion-label class="space" >
+                Feedback
+              </ion-label>
+              <!-- <ion-row class="notification">
+                <ion-label>1</ion-label>
+              </ion-row> -->
+            </ion-row>
+            <ion-row>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-row>
+          </ion-row>
+          <ion-row class="hr">
+            <hr>
+          </ion-row>
+          <ion-row class="planner bottom">
+            <ion-row class="left" id="five">
+              <ion-row class="icons">
+                <ion-icon name="log-out-outline"></ion-icon>
+              </ion-row>
+              <ion-label class="space">
+                Logout
+              </ion-label>
+              <!-- <ion-row class="notification">
+                <ion-label>1</ion-label>
+              </ion-row> -->
+            </ion-row>
+            <ion-row>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-row>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet Id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>

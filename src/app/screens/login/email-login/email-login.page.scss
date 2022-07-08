@@ -1,0 +1,93 @@
+ion-content::part(background) {
+    background: #013066;
+}
+
+ion-content {
+
+    .primary-div {
+        height: 96%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .flex-row {
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            // height: 50%;
+            width: 95%;
+
+            .logo-row {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+        }
+
+        .login-col {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            ion-row {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 10px 0px;
+
+                ion-label {
+                    font-family: lato;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+            .input-row{
+                margin-bottom: 10px;
+                background-color: #7F99B2;
+                border-radius: 3px;
+                ion-input{
+                    padding: 5px 10px !important;
+                }
+            }
+            .button-row {
+                background-color: #066DAF;
+                align-items: center;
+                width: 60%;
+                margin-top: 20px;
+                border-radius: 20px;   
+                height: 44px;         
+                ion-button {
+                    // background-color: transparent;
+                    background: transparent;
+                    color: white;
+                    letter-spacing: 0.2px;
+                    height: 38px;
+                    width: 100%;
+                }
+
+                ion-button::part(native) {
+                    // background-color: transparent;
+                    background: transparent;
+                    box-shadow: none;
+                }
+            }
+            .icon-row{
+                align-items: center;
+                ion-icon{
+                    margin-right: 5px;
+                }
+                ion-label{
+                    text-transform: capitalize;
+                    font-family: lato;
+                    font-size: 20px;
+
+                }
+            }
+        }
+    }
+}

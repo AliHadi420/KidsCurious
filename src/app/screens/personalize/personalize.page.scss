@@ -1,0 +1,124 @@
+ion-content::part(background) {
+    background-color: #003065;
+}
+
+ion-content {
+    ion-grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+            ion-label {
+                text-transform: uppercase;
+                font-family: lato;
+                font-size: 5.5vw;
+            }
+        }
+
+        .age-row {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            // height: 500px;
+            ion-label {
+                margin-bottom: 15px;
+                font-size: 4.5vw;
+                font-family: lato;
+            }
+
+            .button-rows {
+                width: 100%;
+                justify-content: space-evenly;
+                align-items: center;
+                display: flex;
+
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    width: 28%;
+
+                    ion-button {
+                        width: 100%;
+                        background-color: white;
+                        color: #09598A;
+                        border-radius: 30px;
+                        font-family: lato;
+                        font-size: 3vw;
+                    }
+
+                    ion-button::part(native) {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .interests {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ion-label {
+                margin-bottom: 15px;
+                font-size: 4.5vw;
+                font-family: lato;
+            }
+
+            .buttons-row {
+                width: 95%;
+                display: flex;
+                flex-direction: row;
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    ion-button{
+                        width: 90%;
+                        text-transform: uppercase;
+                        font-family: lato;
+                        font-size: 3vw;
+                        background-color: white;
+                        color: #09598A;
+                        border-radius: 30px;
+                    }
+                    ion-button::part(native){
+                        background-color: transparent;
+                    }
+                }
+            }
+
+        }
+        .button{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            ion-button{
+                background-color: #066DAF;
+                width: 50%;
+                color: white;
+                border-radius: 30px;
+                font-family: lato;
+                font-size: 3.5vw;
+                text-transform: uppercase;
+            }
+            ion-button::part(native){
+                background-color: transparent;
+            }
+        }
+
+    }
+}

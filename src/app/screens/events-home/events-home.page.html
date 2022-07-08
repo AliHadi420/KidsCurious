@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="headerG">
+      <ion-menu-button slot="start">
+        <ion-buttons>
+          <ion-icon name="list-outline" class="icon"></ion-icon>
+        </ion-buttons>
+      </ion-menu-button>
+      <ion-label class="text"> events</ion-label>
+      <ion-row class="filter-row">
+        <ion-icon name="options-outline" class="icon1"></ion-icon>
+        <ion-label>Filters</ion-label>
+      </ion-row>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="main-grid">
+    <ion-row class="primary-row">
+      <ion-label>Today 4:00pm</ion-label>
+      <ion-label>13-17 yo</ion-label>
+      <ion-label>1 mi</ion-label>
+    </ion-row>
+    <ion-row class="gradient">
+      <ion-slides pager="true" [options]="options">
+        <ion-slide>
+          <ion-row>
+            <img src="../../../assets/imgs/cover.jpg">
+            <ion-row class="info-box" (click)="details()">
+              <ion-row class="col1">
+                <ion-row>
+                  <ion-label>Jun 14</ion-label>
+                  <ion-label>11:00am</ion-label>
+                  <ion-row class="image">
+                    <img src="../../../assets/imgs/circles.png">
+                  </ion-row>
+                  <ion-label>12:00pm</ion-label>
+                </ion-row>
+                <ion-row>
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                </ion-row>
+
+              </ion-row>
+              <ion-row class="col2">
+                <ion-row class="heading-row">
+                  <ion-label>"Mommy & Me" Yoga in the Rock Hall Museum Garden</ion-label>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </ion-row>
+                <ion-row class="price-row">
+                  <ion-label>0-8yo | $15</ion-label>
+                </ion-row>
+                <ion-row class="location-row">
+                  <ion-label>rock hall Museum</ion-label>
+                </ion-row>
+                <ion-row class="description-row">
+                  <ion-label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam illo hic
+                    voluptates eos repellendus, reiciendis impedit odi.</ion-label>
+                </ion-row>
+              </ion-row>
+            </ion-row>
+          </ion-row>
+        </ion-slide>
+        <ion-slide>
+          <ion-row>
+            <img src="../../../assets/imgs/cover.jpg">
+            <ion-row class="info-box">
+              <ion-row class="col1">
+                <ion-row>
+                  <ion-label>Jun 14</ion-label>
+                  <ion-label>11:00am</ion-label>
+                  <ion-label>12:00pm</ion-label>
+                </ion-row>
+                <ion-row>
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                </ion-row>
+
+              </ion-row>
+              <ion-row class="col2">
+                <ion-row class="heading-row">
+                  <ion-label>"Mommy & Me" Yoga in the Rock Hall Museum Garden</ion-label>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </ion-row>
+                <ion-row class="price-row">
+                  <ion-label>0-8yo | $15</ion-label>
+                </ion-row>
+                <ion-row class="location-row">
+                  <ion-label>rock hall Museum</ion-label>
+                </ion-row>
+                <ion-row class="description-row">
+                  <ion-label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam illo hic
+                    voluptates eos repellendus, reiciendis impedit odi.</ion-label>
+                </ion-row>
+              </ion-row>
+            </ion-row>
+          </ion-row>
+        </ion-slide>
+        <ion-slide>
+          <ion-row>
+            <img src="../../../assets/imgs/cover.jpg">
+            <ion-row class="info-box">
+              <ion-row class="col1">
+                <ion-row>
+                  <ion-label>Jun 14</ion-label>
+                  <ion-label>11:00am</ion-label>
+                  <ion-label>12:00pm</ion-label>
+                </ion-row>
+                <ion-row>
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                </ion-row>
+
+              </ion-row>
+              <ion-row class="col2">
+                <ion-row class="heading-row">
+                  <ion-label>"Mommy & Me" Yoga in the Rock Hall Museum Garden</ion-label>
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </ion-row>
+                <ion-row class="price-row">
+                  <ion-label>0-8yo | $15</ion-label>
+                </ion-row>
+                <ion-row class="location-row">
+                  <ion-label>rock hall Museum</ion-label>
+                </ion-row>
+                <ion-row class="description-row">
+                  <ion-label>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quisquam illo hic
+                    voluptates eos repellendus, reiciendis impedit odi.</ion-label>
+                </ion-row>
+              </ion-row>
+            </ion-row>
+          </ion-row>
+        </ion-slide>
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+  <app-footer></app-footer>
+</ion-content>

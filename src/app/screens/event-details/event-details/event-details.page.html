@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="headerG">
+
+      <ion-buttons>
+        <ion-icon name="chevron-back-outline" class="icon" (click)="location.back()"></ion-icon>
+      </ion-buttons>
+
+      <ion-label class="text"> event details</ion-label>
+      <ion-row class="filter-row">
+        <ion-icon name="options-outline" class="icon1"></ion-icon>
+      </ion-row>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid class="main-grid">
+    <ion-row class="button-row">
+    <ion-segment [(ngModel)]="option" mode="md">
+      <ion-segment-button value="about" indicator="false">
+        <ion-label>about</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="map">
+        <ion-label>map</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-row>
+    <div class="container_total" [ngSwitch]="option">
+
+      <!-- SIGN-IN -->
+      <app-event-details-about *ngSwitchCase="'about'"></app-event-details-about>
+      <!-- SIGN-UP -->
+      <app-event-details-map *ngSwitchCase="'map'"></app-event-details-map>
+    </div>
+  </ion-grid>
+</ion-content>

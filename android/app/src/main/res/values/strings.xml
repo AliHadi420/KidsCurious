@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">KidsCurious</string>
+    <string name="title_activity_main">KidsCurious</string>
+    <string name="package_name">com.kidscurious.fblogin</string>
+    <string name="custom_url_scheme">com.kidscurious.fblogin</string>
+    <string name="facebook_app_id">1008791466449351</string>
+<string name="fb_login_protocol_scheme">fb1234</string>
+<string name="facebook_client_token">cc9a20008492e2d4b07ae0aa9139d909</string>
+</resources>

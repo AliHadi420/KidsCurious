@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ion-header {
+    background: white;
+    position: unset;
+
+    ion-toolbar {
+        background: #015A92;
+        --background: transparent;
+        height: 60px;
+    }
+
+    .headerG {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .icon {
+        // width: 30px;
+        color: white;
+        font-size: 1.9em;
+
+    }
+
+    .icon1 {
+        font-size: 1.6em;
+        margin-right: 5px;
+        transform: rotate(90deg);
+        color: transparent;
+    }
+
+    .text {
+        color: white;
+        font-family: lato;
+        font-size: 1.7em;
+        text-transform: capitalize;
+    }
+
+    .filter-row {
+        ion-label {
+            font-family: lato;
+            font-size: 1.1em;
+            text-transform: capitalize;
+            color: white;
+        }
+    }
+}
+
+ion-content {
+    .main-grid {
+        overflow: auto;
+
+        .button-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            background: #066DAF;
+
+            ion-segment {
+                width: 90%;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // padding: 6px 8px;
+                // border: var(--login-sign-border);
+                // background: var(--login-sign-bg);
+                // height: 63px;
+                margin: 20px 0;
+
+                ion-segment-button {
+                    min-height: 100%;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: var(--white-black-color);
+                    border-radius: 6px;
+
+                    ion-label {
+                        font-family: "Open Sans, Regular";
+                        font-size: 14px;
+                    }
+                }
+
+                .segment-button-checked {
+                    // color: Black;
+                    // height: 30px;
+                    background: #FE00DD;
+                    color: white;
+                    // border-radius: 50px;
+                    // width: 30px;
+                }
+
+                ion-segment-button {
+                    --background-checked: transparent;
+                    --indicator-color: transparent;
+                    color: Black;
+                    height: 40px;
+                    background: white;
+                    border-radius: 50px;
+                    max-width: 100%;
+                    color: #009afb;
+                    margin: 0px 15px;
+                }
+            }
+        }
+
+    }
+}

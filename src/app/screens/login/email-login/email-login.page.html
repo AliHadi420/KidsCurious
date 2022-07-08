@@ -1,0 +1,27 @@
+<ion-content>
+  <ion-grid class="primary-div">
+    <ion-row class="flex-row">
+      <ion-row class="logo-row">
+        <img src="assets/imgs/logo.jpeg">
+      </ion-row>
+      <ion-row class="login-col">
+        <ion-row >
+          <ion-label>Login:</ion-label>
+        </ion-row>
+        <ion-row class="input-row">
+          <ion-input type="Name" placeholder="Name"></ion-input>
+        </ion-row>
+        <ion-row class="input-row">
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-row>
+        <ion-row class="button-row">
+          <ion-button>Sign Up</ion-button>
+        </ion-row>
+        <ion-row class="icon-row">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          <ion-label (click)="back()">back</ion-label>
+        </ion-row>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+</ion-content>

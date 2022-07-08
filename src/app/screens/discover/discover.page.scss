@@ -1,0 +1,66 @@
+ion-content::part(background){
+    background: #013066;
+}
+ion-content{
+    ion-grid{
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-evenly;
+        width: 100%;
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ion-label{
+                color: #0080D2;
+                font-family: lato;
+                font-size: 5.5vw;
+                text-transform: uppercase;
+            }
+        }
+        .row-one{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            ion-label{
+                font-family: lato;
+                font-size: 3.5vw;
+
+            }
+            strong{
+                font-weight: 900;
+                font-size: 3.5vw;
+            }
+        }
+        .button-row{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-transform: uppercase;
+            font-family: lato;
+            // background-color: #0080D2;
+            ion-button{
+                border-radius: 20px;
+                background-color: #0080D2;
+                width: 65%;
+                font-size: 3.5vw;
+                font-family: lato;
+            }
+            ion-button::part(native){
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+}
+#break{
+    width: 70%;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-grid class="primary-div">
+    <ion-row class="flex-row">
+      <ion-row class="logo-row">
+        <img src="assets/imgs/logo.jpeg">
+      </ion-row>
+      <ion-row class="login-col">
+        <ion-row>
+          <ion-label>For a better journey:</ion-label>
+        </ion-row>
+        <ion-row class="button-row" (click)="forward()">
+          <img src="../../../../assets/imgs/fb-icon.png" class="fb">
+          <ion-button >Sign up with Facebook</ion-button>
+        </ion-row>
+        <ion-row>
+          <ion-label>We never post on your facebook!</ion-label>
+        </ion-row>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+  <ion-row class="secondary-div">
+    <ion-row>
+      <ion-label (click)="emailSignUp()">Sign up with Email</ion-label>
+    </ion-row>
+    <ion-row>
+      <ion-label (click)="emailLogin()"><span>Already on KidsCurious? </span>Log In with Email</ion-label>
+    </ion-row>
+  </ion-row>
+</ion-content>
